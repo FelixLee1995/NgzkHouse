@@ -1,7 +1,7 @@
-from datetime import datetime, timedelta
 import requests
 import json
 from dataclasses import dataclass
+from datetime import datetime, timedelta
 from urllib.parse import urlencode
 from tenacity import retry, stop_after_delay, stop_after_attempt, wait_random
 from my_config import g_config
@@ -41,6 +41,7 @@ class NgzkMsgApi(object):
         self.qry_order = g_config.get_config("qry_order", 'desc')
         self.token = {}   # key为  refresh_token   val 为 临时token
         self.g_sublist = {}
+        self.last_updated = datetime.now()
         self.get_access_token()
         self.get_subscribed_members()
 
@@ -112,7 +113,16 @@ class NgzkMsgApi(object):
         return res
 
 
+    def refresh_expired_token(self):
+        if (datetime.now() - self.last_updated) > timedelta(minutes=58):
+            self.token = {}  # key为  refresh_token   val 为 临时token
+            self.g_sublist = {}
+            self.last_updated = datetime.now()
+            self.get_access_token()
+            self.get_subscribed_members()
+
     def get_available_token(self, member: str):
+        self.refresh_expired_token()
         if member in self.g_sublist:
             return list(self.g_sublist[member].AvailableTokenDict.items())[0]
 
