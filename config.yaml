@@ -1,0 +1,6 @@
+qry_history_spread: 12                               # api查询历史msg时的时间跨度，  表示从当前时间点 n 小时前开始查询
+qry_history_cnt: 200                               # api查询历史msg时的条目数，  不能超过200
+qry_order: desc                               # api查询历史msg时的顺序，   asc:  顺序   desc 倒序
+qry_timeout: 3                                     # api调用超时时间， 建议设置为3
+socket_timeout: 10                                     # socket超时时间， 建议设置为10
+blog_bg_color:   E6E6FA                                # blog页面的背景色

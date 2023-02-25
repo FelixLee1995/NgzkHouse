@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 45,
+    "state": "open",
+    "name": "乃木坂46",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/45-20230201-025108.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/official.jpg",
+    "priority": 100000,
+    "is_letter_destination": false,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3T5M5rp",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:51:08Z",
+    "subscription": {
+      "type": "free",
+      "state": "active",
+      "auto_renewing": false,
+      "start_at": "2022-02-21T14:48:36Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-announcements"
+    ]
+  },
+  {
+    "id": 1,
+    "state": "open",
+    "name": "秋元 真夏",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/1-20221231-105229.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/akimotomanatsu.jpg",
+    "priority": 10000,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3TjUDLL",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:52:30Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 46,
+    "state": "open",
+    "name": "五百城 茉央",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/46-20230120-032002.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/46-20230120-032006.jfif",
+    "priority": 9998,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3J6DhPY",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:07Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-08T15:16:56Z",
+      "end_at": "2023-03-08T15:16:56Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 47,
+    "state": "open",
+    "name": "池田 瑛紗",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/47-20230120-032816.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/47-20230120-032819.jfif",
+    "priority": 9995,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3JaWQGT",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:08Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-01T12:24:09Z",
+      "end_at": "2023-03-01T12:24:09Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 48,
+    "state": "open",
+    "name": "一ノ瀬 美空",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/48-20230120-033327.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/48-20230120-033332.jfif",
+    "priority": 9993,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3JchSVP",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:08Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-22T05:56:29Z",
+      "end_at": "2023-03-22T04:56:29Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 17,
+    "state": "open",
+    "name": "伊藤 理々杏",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/17-20221231-112207.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/itouriria.jpg",
+    "priority": 9990,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3S85VRR",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:22:08Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 49,
+    "state": "open",
+    "name": "井上 和",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/49-20230120-033651.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/49-20230120-033656.jfif",
+    "priority": 9985,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3D8DL4h",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:09Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 18,
+    "state": "open",
+    "name": "岩本 蓮加",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/18-20221231-112342.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/iwamotorenka.jpg",
+    "priority": 9980,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3VBX7Xo",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:23:43Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 19,
+    "state": "open",
+    "name": "梅澤 美波",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/19-20221231-112110.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/umezawaminami.jpg",
+    "priority": 9970,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3D3pczr",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:21:11Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 29,
+    "state": "open",
+    "name": "遠藤 さくら",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/29-20221231-105624.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/endousakura.jpg",
+    "priority": 9960,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3Vy6PcZ",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:56:24Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-10T01:00:50Z",
+      "end_at": "2023-03-10T01:00:50Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 50,
+    "state": "open",
+    "name": "岡本 姫奈",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/50-20230120-034505.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/50-20230120-034508.jfif",
+    "priority": 9958,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3HnGZDH",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:10Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 51,
+    "state": "open",
+    "name": "小川 彩",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/51-20230120-034959.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/51-20230120-035003.jfif",
+    "priority": 9955,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3J41HJR",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:10Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 52,
+    "state": "open",
+    "name": "奥田 いろは",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/52-20230120-035428.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/52-20230120-035432.jfif",
+    "priority": 9953,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3HnFYve",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:11Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 30,
+    "state": "open",
+    "name": "賀喜 遥香",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/30-20221231-105651.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kakiharuka.jpg",
+    "priority": 9950,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3VqsKTs",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:56:52Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 31,
+    "state": "end",
+    "name": "掛橋 沙耶香",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/31-20220204-061114.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kakehashisayaka.jpg",
+    "priority": 9940,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "end_at": "2022-11-30T03:00:00Z",
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3z97Qir",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-11-30T03:00:19Z",
+    "subscription": {
+      "type": "paid",
+      "state": "expired",
+      "auto_renewing": false,
+      "start_at": "2022-02-21T15:21:38Z",
+      "end_at": "2022-03-21T17:21:35Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 32,
+    "state": "open",
+    "name": "金川 紗耶",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/32-20221231-105711.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kanagawasaya.jpg",
+    "priority": 9930,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3VxyStf",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:57:12Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 53,
+    "state": "open",
+    "name": "川﨑 桜",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/53-20230120-040152.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/53-20230120-040156.jfif",
+    "priority": 9925,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3iXbzup",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:11Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-07T04:15:27Z",
+      "end_at": "2023-03-07T04:15:27Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 33,
+    "state": "open",
+    "name": "北川 悠理",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/33-20221231-105747.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kitagawayuri.jpg",
+    "priority": 9920,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3Tsn7Ct",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:57:48Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 21,
+    "state": "open",
+    "name": "久保 史緒里",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/21-20221231-105820.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kuboshiori.jpg",
+    "priority": 9900,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3MAsTQe",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:58:21Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 34,
+    "state": "open",
+    "name": "黒見 明香",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/34-20221231-105835.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/kuromiharuka.jpg",
+    "priority": 9890,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3gfNeOz",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:58:36Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 22,
+    "state": "open",
+    "name": "阪口 珠美",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/22-20221231-105907.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/sakaguchitamami.jpg",
+    "priority": 9870,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3D5ukDj",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:59:08Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 23,
+    "state": "open",
+    "name": "佐藤 楓",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/23-20221231-105922.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/satoukaede.jpg",
+    "priority": 9860,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3eDZqZc",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T10:59:23Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 35,
+    "state": "open",
+    "name": "佐藤 璃果",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/35-20221231-110003.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/satourika.jpg",
+    "priority": 9850,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3MzZbuJ",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:00:05Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 36,
+    "state": "open",
+    "name": "柴田 柚菜",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/36-20221231-110028.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/shibatayuna.jpg",
+    "priority": 9840,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3VwZM4o",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:00:29Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 54,
+    "state": "open",
+    "name": "菅原 咲月",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/54-20230120-040509.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/54-20230120-040513.jfif",
+    "priority": 9830,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3XAlpkX",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:12Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-19T10:01:49Z",
+      "end_at": "2023-03-19T09:01:49Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 12,
+    "state": "open",
+    "name": "鈴木 絢音",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/12-20221231-110050.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/suzukiayane.jpg",
+    "priority": 9820,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3eBFMNn",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:00:50Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 37,
+    "state": "open",
+    "name": "清宮 レイ",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/37-20221231-110157.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/seimiyarei.jpg",
+    "priority": 9810,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3ewkq4c",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:01:58Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 38,
+    "state": "open",
+    "name": "田村 真佑",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/38-20221231-110222.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/tamuramayu.jpg",
+    "priority": 9800,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3T931gG",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:02:23Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 39,
+    "state": "open",
+    "name": "筒井 あやめ",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/39-20221231-110242.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/tsutsuiayame.jpg",
+    "priority": 9790,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3VyfOed",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:02:42Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 55,
+    "state": "open",
+    "name": "冨里 奈央",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/55-20230120-040829.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/55-20230120-040833.jfif",
+    "priority": 9780,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3kyaY2I",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:12Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 56,
+    "state": "open",
+    "name": "中西 アルノ",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/56-20230120-041113.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/56-20230120-041117.jfif",
+    "priority": 9775,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3J7lxUv",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2023-02-01T02:54:13Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 24,
+    "state": "open",
+    "name": "中村 麗乃",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/24-20221231-110309.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/nakamurareno.jpg",
+    "priority": 9770,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3T5U73C",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:03:09Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 40,
+    "state": "open",
+    "name": "早川 聖来",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/40-20221231-110328.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/hayakawaseira.jpg",
+    "priority": 9760,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3eJbPee",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:03:29Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 41,
+    "state": "open",
+    "name": "林 瑠奈",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/41-20221231-110350.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/hayashiruna.jpg",
+    "priority": 9750,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3Ttokt8",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:03:51Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 42,
+    "state": "open",
+    "name": "松尾 美佑",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/42-20221231-110408.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/matsuomiyu.jpg",
+    "priority": 9720,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3EPmQFO",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:04:09Z",
+    "subscription": {
+      "type": "paid",
+      "state": "expired",
+      "auto_renewing": false,
+      "start_at": "2022-02-21T15:22:06Z",
+      "end_at": "2022-03-21T17:22:02Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 25,
+    "state": "open",
+    "name": "向井 葉月",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/25-20221231-110435.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/mukaihazuki.jpg",
+    "priority": 9710,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3s1wbCH",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:04:36Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 43,
+    "state": "open",
+    "name": "矢久保 美緒",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/43-20221231-110449.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/yakubomio.jpg",
+    "priority": 9700,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3TuvjSy",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:04:50Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 26,
+    "state": "open",
+    "name": "山下美月",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/26-20221231-112003.jfif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/yamashitamizuki.jpg",
+    "priority": 9680,
+    "is_letter_destinatioon": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3Tuvz3Y",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:20:04Z",
+    "subscription": {
+      "type": "paid",
+      "state": "active",
+      "auto_renewing": true,
+      "start_at": "2023-02-03T14:29:30Z",
+      "end_at": "2023-03-03T14:29:30Z"
+    },
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 44,
+    "state": "open",
+    "name": "弓木 奈於",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/44-20221231-110518.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/yumikinao.jpg",
+    "priority": 9670,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3s2IVsQ",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:05:19Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 27,
+    "state": "open",
+    "name": "吉田 綾乃ｸﾘｽﾃｨｰ",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/27-20221231-110542.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/yoshidaayanochristie.jpg",
+    "priority": 9660,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3CH9PLt",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:05:43Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 28,
+    "state": "open",
+    "name": "与田 祐希",
+    "thumbnail": "https://djznowbmqickg.cloudfront.net/public/groups/thumbnails/28-20221231-110610.gif",
+    "phone_image": "https://djznowbmqickg.cloudfront.net/public/groups/phone-images/yodayuuki.jpg",
+    "priority": 9650,
+    "is_letter_destination": false,
+    "trial_days": 0,
+    "options": {
+      "is_letter_open_notified": false,
+      "is_message_commentable": false,
+      "share_url": "https://bit.ly/3eIy4B3",
+      "sp_message_permission": "none"
+    },
+    "updated_at": "2022-12-31T11:06:11Z",
+    "tags": [
+      "nogizaka46.com",
+      "nogizaka46-1"
+    ]
+  },
+  {
+    "id": 2,
+    "state": "closed",
+    "name": "生田 絵梨花",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T18:59:34Z",
+    "tags": []
+  },
+  {
+    "id": 3,
+    "state": "closed",
+    "name": "齋藤 飛鳥",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2023-01-31T13:00:17Z",
+    "tags": []
+  },
+  {
+    "id": 4,
+    "state": "closed",
+    "name": "高山 一実",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T18:59:40Z",
+    "tags": []
+  },
+  {
+    "id": 5,
+    "state": "closed",
+    "name": "樋口 日奈",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-12-31T03:46:38Z",
+    "tags": []
+  },
+  {
+    "id": 6,
+    "state": "closed",
+    "name": "星野 みなみ",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T18:59:47Z",
+    "tags": []
+  },
+  {
+    "id": 7,
+    "state": "closed",
+    "name": "松村 沙友理",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T18:59:54Z",
+    "tags": []
+  },
+  {
+    "id": 8,
+    "state": "closed",
+    "name": "和田 まあや",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2023-01-10T11:20:41Z",
+    "tags": []
+  },
+  {
+    "id": 9,
+    "state": "closed",
+    "name": "伊藤 純奈",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:00Z",
+    "tags": []
+  },
+  {
+    "id": 10,
+    "state": "closed",
+    "name": "北野 日奈子",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-08-29T01:04:37Z",
+    "tags": []
+  },
+  {
+    "id": 11,
+    "state": "closed",
+    "name": "新内 眞衣",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:07Z",
+    "tags": []
+  },
+  {
+    "id": 13,
+    "state": "closed",
+    "name": "寺田 蘭世",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:13Z",
+    "tags": []
+  },
+  {
+    "id": 14,
+    "state": "closed",
+    "name": "堀 未央奈",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:20Z",
+    "tags": []
+  },
+  {
+    "id": 15,
+    "state": "closed",
+    "name": "山崎 怜奈",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-08-29T01:04:49Z",
+    "tags": []
+  },
+  {
+    "id": 16,
+    "state": "closed",
+    "name": "渡辺 みり愛",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:27Z",
+    "tags": []
+  },
+  {
+    "id": 20,
+    "state": "closed",
+    "name": "大園 桃子",
+    "thumbnail": "",
+    "priority": 0,
+    "is_letter_destination": false,
+    "updated_at": "2022-02-09T19:00:33Z",
+    "tags": []
+  }
+]

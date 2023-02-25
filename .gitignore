@@ -1,0 +1,6 @@
+secrets.toml
+*.log
+*.txt
+!requirements.txt
+.idea
+venv
