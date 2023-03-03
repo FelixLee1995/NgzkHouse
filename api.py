@@ -98,7 +98,7 @@ class NgzkMsgApi(object):
 
             responseObject = json.loads(resp.text)
             # print(responseObject)
-            print(f'req groups: {responseObject}')
+            # print(f'req groups: {responseObject}')
             for item in responseObject:
                 if 'subscription' in item:
                     if 'state' in item['subscription'] and (
@@ -174,7 +174,7 @@ class NgzkMsgApi(object):
 
             responseObject = json.loads(resp.text)
 
-            print(f"resp of get msg is {responseObject}")
+            # print(f"resp of get msg is {responseObject}")
 
             if 'code' in responseObject and responseObject['code'] == 'unauthorized':
                 self.token = self.get_access_token()
