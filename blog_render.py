@@ -22,8 +22,9 @@ def render_blogs(blogs):
 
                     with st.expander(blog['title']):
                         # blog_expander.markdown()
+                        html_title = blog['title']
                         html_content = blog['text']
                         html_content = html_content.replace("/files", "https://www.nogizaka46.com/files")
-                        html_str = '<!DOCTYPE html><html><head><meta charset="utf-8"><title></title></head><body style="background-color:#%s">%s' \
-                                   '</body></html>' % (blog_bg_color, html_content)
+                        html_str = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>%s</title></head><body style="background-color:#%s">%s' \
+                                   '</body></html>' % (html_title, blog_bg_color, html_content)
                         st.components.v1.html(html_str, width=None, height=1280, scrolling=True)
