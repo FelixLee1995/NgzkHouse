@@ -185,7 +185,7 @@ class NgzkMsgApi(object):
         return res
 
 
-class NgkzBlogApi(object):
+class N46BlogApi(object):
     reqUrl: str
 
     def __init__(self):
@@ -200,5 +200,21 @@ class NgkzBlogApi(object):
         return res_json_obj['data']
 
 
-g_blog_api = NgkzBlogApi()
+class S46BlogApi(object):
+    reqUrl: str
+
+    def __init__(self):
+        self.reqUrl = 'https://www.sakurazaka46.com/s/s46app/api/json/diary?cd=blog'
+
+    @retry(wait=wait_random(min=2, max=5), stop=stop_after_attempt(3), reraise=True)
+    def get_latest_blogs(self):
+        res = requests.request('get', self.reqUrl, timeout=10)
+        res_str = res.text
+        res_json_obj = json.loads(res_str)
+        blogs = res_json_obj['blog']
+        return blogs
+
+
+g_blog_api = N46BlogApi()
 g_msg_api = NgzkMsgApi()
+g_s46_blog_api = S46BlogApi()
