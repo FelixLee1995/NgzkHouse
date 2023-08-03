@@ -25,6 +25,8 @@ class ConfigManager(object):
 
 		if 'refresh_token' in st.secrets and st.secrets["refresh_token"] is not None:
 			refresh_token = st.secrets["refresh_token"]
+		if 'refresh_token_s46' in st.secrets and st.secrets["refresh_token_s46"] is not None:
+			refresh_token_s46 = st.secrets["refresh_token_s46"]
 		else:
 			## 如果不采用 streamlit方式的话，  这里应采用配置文件中的
 			exit(-10)
@@ -37,6 +39,9 @@ class ConfigManager(object):
 
 		if refresh_token is not None:
 			self.config_dict['refresh_token'] = refresh_token
+
+		if refresh_token_s46 is not None:
+			self.config_dict['refresh_token_s46'] = refresh_token_s46
 
 	def get_config(self, key: str, defaultVal):
 		if key in self.config_dict and self.config_dict[key] is not None:
