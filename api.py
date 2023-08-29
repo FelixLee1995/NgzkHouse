@@ -214,7 +214,7 @@ class SkzkMsgApi(object):
 
             payload = {"refresh_token": refresh_token}
             headers = {
-                'Host': 'api.kh.glastonr.net',
+                'Host': 'api.s46.glastonr.net',
                 'Content-Type': 'application/json',
                 'Connection': 'keep-alive',
                 'Accept': '*/*',
@@ -225,7 +225,7 @@ class SkzkMsgApi(object):
                 'Content-Length': '56'
             }
 
-            resp = requests.request('POST', "https://api.kh.glastonr.net/v2/update_token", data=json.dumps(payload),
+            resp = requests.request('POST', "https://api.s46.glastonr.net/v2/update_token", data=json.dumps(payload),
                                     headers=headers, timeout=self.qry_timeout)
 
             responseObject = json.loads(resp.text)
@@ -247,13 +247,13 @@ class SkzkMsgApi(object):
                 'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
                 'Connection': 'keep-alive',
                 'Content-Length': '56',
-                'Host': 'api.kh.glastonr.net',
+                'Host': 'api.s46.glastonr.net',
                 'Authorization': 'Bearer ' + self.token[refresh_token],
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
                 'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
                 'Content-Type': 'application/json'
             }
-            resp = requests.request('GET', "https://api.kh.glastonr.net/v2/groups", data=json.dumps(payload),
+            resp = requests.request('GET', "https://api.s46.glastonr.net/v2/groups", data=json.dumps(payload),
                                     headers=headers,
                                     timeout=self.qry_timeout)
 
@@ -313,7 +313,7 @@ class SkzkMsgApi(object):
                 'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
                 'Connection': 'keep-alive',
                 'Content-Length': '56',
-                'Host': 'api.kh.glastonr.net',
+                'Host': 'api.s46.glastonr.net',
                 'Authorization': 'Bearer ' + token,
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
                 'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
@@ -329,7 +329,7 @@ class SkzkMsgApi(object):
             }
 
             resp = requests.request('GET',
-                                    "https://api.kh.glastonr.net/v2/groups/" + str(
+                                    "https://api.s46.glastonr.net/v2/groups/" + str(
                                         self.g_sublist[member].Id) + "/timeline?" + urlencode(
                                         params), data=json.dumps(payload), headers=headers, timeout=self.qry_timeout)
 
