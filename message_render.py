@@ -15,7 +15,8 @@ def render_msgs(member, msgs):
                 with st.container():
                     if 'text' in message:
                         st.write(message['text'])
-                    st.image(message['file'])
+                    if 'file' in message:
+                        st.image(message['file'])
                     st.caption('发布于 ' + local_timestr)
             if message['type'] == 'text':
                 with st.container():

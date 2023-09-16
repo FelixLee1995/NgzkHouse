@@ -3,9 +3,6 @@ import sys
 import os
 import streamlit as st
 
-import sys, getopt
-import argparse
-
 def load_yaml(filename):
 	if os.path.exists(filename):
 		with open(filename, mode="r", encoding="UTF-8") as f:

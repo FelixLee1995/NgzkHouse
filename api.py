@@ -60,7 +60,7 @@ class NgzkMsgApi(object):
                 'Content-Length': '56',
                 'Host': 'api.n46.glastonr.net',
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
 
@@ -89,7 +89,7 @@ class NgzkMsgApi(object):
                 'Host': 'api.n46.glastonr.net',
                 'Authorization': 'Bearer ' + self.token[refresh_token],
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
             resp = requests.request('GET', "https://api.n46.glastonr.net/v2/groups", data=json.dumps(payload),
@@ -155,7 +155,7 @@ class NgzkMsgApi(object):
                 'Host': 'api.n46.glastonr.net',
                 'Authorization': 'Bearer ' + token,
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
 
@@ -218,7 +218,7 @@ class SkzkMsgApi(object):
                 'Content-Type': 'application/json',
                 'Connection': 'keep-alive',
                 'Accept': '*/*',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'User-Agent': 'Hot/1.6.00 (jp.co.sonymusic.communication.nogizaka; build:145; iOS 16.1.2) Alamofire/5.6.2',
                 'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
                 'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
@@ -250,7 +250,7 @@ class SkzkMsgApi(object):
                 'Host': 'api.s46.glastonr.net',
                 'Authorization': 'Bearer ' + self.token[refresh_token],
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
             resp = requests.request('GET', "https://api.s46.glastonr.net/v2/groups", data=json.dumps(payload),
@@ -316,7 +316,7 @@ class SkzkMsgApi(object):
                 'Host': 'api.s46.glastonr.net',
                 'Authorization': 'Bearer ' + token,
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
 
@@ -378,7 +378,7 @@ class HntzkMsgApi(object):
                 'Content-Type': 'application/json',
                 'Connection': 'keep-alive',
                 'Accept': '*/*',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'User-Agent': 'Hot/1.6.00 (jp.co.sonymusic.communication.nogizaka; build:145; iOS 16.1.2) Alamofire/5.6.2',
                 'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
                 'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
@@ -410,7 +410,7 @@ class HntzkMsgApi(object):
                 'Host': 'api.kh.glastonr.net',
                 'Authorization': 'Bearer ' + self.token[refresh_token],
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
             resp = requests.request('GET', "https://api.kh.glastonr.net/v2/groups", data=json.dumps(payload),
@@ -476,7 +476,7 @@ class HntzkMsgApi(object):
                 'Host': 'api.kh.glastonr.net',
                 'Authorization': 'Bearer ' + token,
                 'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.2',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.3',
                 'Content-Type': 'application/json'
             }
 
