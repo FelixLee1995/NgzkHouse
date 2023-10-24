@@ -126,7 +126,7 @@ class NgzkMsgApi(object):
         if member in self.g_sublist:
             return list(self.g_sublist[member].AvailableTokenDict.items())[0]
 
-        return None
+        return None, None
 
     @retry(wait=wait_random(min=2, max=5), stop=stop_after_attempt(3), reraise=True)
     def get_latest_msgs(self, member: str, updated_from=None):
@@ -135,7 +135,7 @@ class NgzkMsgApi(object):
 
         if refresh_token is None:
             print(f"failed to find available token for {member}")
-            return
+            return None
 
         if updated_from is None:
             now_time = datetime.now()
@@ -287,7 +287,7 @@ class SkzkMsgApi(object):
         if member in self.g_sublist:
             return list(self.g_sublist[member].AvailableTokenDict.items())[0]
 
-        return None
+        return None, None
 
     @retry(wait=wait_random(min=2, max=5), stop=stop_after_attempt(3), reraise=True)
     def get_latest_msgs(self, member: str, updated_from=None):
@@ -296,7 +296,7 @@ class SkzkMsgApi(object):
 
         if refresh_token is None:
             print(f"failed to find available token for {member}")
-            return
+            return None
 
         if updated_from is None:
             now_time = datetime.now()
@@ -447,7 +447,7 @@ class HntzkMsgApi(object):
         if member in self.g_sublist:
             return list(self.g_sublist[member].AvailableTokenDict.items())[0]
 
-        return None
+        return None, None
 
     @retry(wait=wait_random(min=2, max=5), stop=stop_after_attempt(3), reraise=True)
     def get_latest_msgs(self, member: str, updated_from=None):
@@ -456,7 +456,7 @@ class HntzkMsgApi(object):
 
         if refresh_token is None:
             print(f"failed to find available token for {member}")
-            return
+            return None
 
         if updated_from is None:
             now_time = datetime.now()
