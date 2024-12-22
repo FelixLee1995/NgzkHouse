@@ -39,6 +39,6 @@ def render_msgs(member, msgs):
                         st.write(message['text'])
                     st.video(message['file'])
                     st.caption('发布于 ' + local_timestr)
-                    download_content_bin = g_downloader.download_resource(message['file'])
-                    st.download_button(label="Download as mp4", data=download_content_bin, file_name=desc + '.mp4',
-                        mime='application/octet-stream', key=uuid.uuid4().int)
+                    # download_content_bin = g_downloader.download_resource(message['file'])
+                    # st.download_button(label="Download as mp4", data=download_content_bin, file_name=desc + '.mp4',
+                    #     mime='application/octet-stream', key=uuid.uuid4().int)
