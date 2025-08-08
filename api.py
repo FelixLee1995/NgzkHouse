@@ -10,6 +10,39 @@ import socket
 socket.setdefaulttimeout(g_config.get_config("socket_timeout", 10))
 
 
+g_ngzk_headers  = {
+                'Accept-Encoding': 'gzip',
+                'Accept-Language': 'zh-Hans-CN;q=1.0,ja-CN;q=0.9,zh-Hant-CN;q=0.8',
+                'Content-Length': '56',
+                'Host': 'api.n46.glastonr.net',
+                'User-Agent': 'Dart/3.7 (dart:io)',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
+                'x-talk-app-platform': 'ios',
+                'Content-Type': 'application/json'
+            }
+
+g_skzk_headers  = {
+                'Accept-Encoding': 'gzip',
+                'Accept-Language': 'zh-Hans-CN;q=1.0,ja-CN;q=0.9,zh-Hant-CN;q=0.8',
+                'Content-Length': '56',
+                'Host': 'api.s46.glastonr.net',
+                'User-Agent': 'Dart/3.7 (dart:io)',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.sakurazaka 2.4',
+                'x-talk-app-platform': 'ios',
+                'Content-Type': 'application/json'
+            }
+
+g_htzk_headers  = {
+                'Accept-Encoding': 'gzip',
+                'Accept-Language': 'zh-Hans-CN;q=1.0,ja-CN;q=0.9,zh-Hant-CN;q=0.8',
+                'Content-Length': '56',
+                'Host': 'api.kh.glastonr.net',
+                'User-Agent': 'Dart/3.7 (dart:io)',
+                'X-Talk-App-ID': 'jp.co.sonymusic.communication.keyakizaka 2.4',
+                'x-talk-app-platform': 'ios',
+                'Content-Type': 'application/json'
+            }
+
 @dataclass
 class NgzkMsgGroup:
     Name: str
@@ -52,21 +85,10 @@ class NgzkMsgApi(object):
         for refresh_token in self.refresh_token:
 
             payload = {"refresh_token": refresh_token}
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.n46.glastonr.net',
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
 
             resp = requests.request('POST', "https://api.n46.glastonr.net/v2/update_token", data=json.dumps(payload),
-                                    headers=headers, timeout=self.qry_timeout)
-
+                                    headers=g_ngzk_headers, timeout=self.qry_timeout)
+            # print(f"update_token res is {resp}")
             responseObject = json.loads(resp.text)
             if 'code' in responseObject and responseObject['code'] == 'unauthorized':
                 continue
@@ -80,19 +102,9 @@ class NgzkMsgApi(object):
 
 
             payload = {"refresh_token": refresh_token}
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.n46.glastonr.net',
-                'Authorization': 'Bearer ' + self.token[refresh_token],
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
-            resp = requests.request('GET', "https://api.n46.glastonr.net/v2/groups", data=json.dumps(payload),
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_ngzk_headers
+            resp = requests.request('GET', "https://api.n46.glastonr.net/v2/groups?organization_id=1", data=json.dumps(payload),
                                     headers=headers,
                                     timeout=self.qry_timeout)
 
@@ -146,19 +158,8 @@ class NgzkMsgApi(object):
         res = []
         payload = {"refresh_token": refresh_token}
         if member in self.g_sublist:
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.n46.glastonr.net',
-                'Authorization': 'Bearer ' + token,
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
-
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_ngzk_headers
             params = {
 
                 "count": str(self.qry_history_cnt),  # 获取msg的数量
@@ -226,7 +227,7 @@ class SkzkMsgApi(object):
             }
 
             resp = requests.request('POST', "https://api.s46.glastonr.net/v2/update_token", data=json.dumps(payload),
-                                    headers=headers, timeout=self.qry_timeout)
+                                    headers=g_skzk_headers, timeout=self.qry_timeout)
 
             responseObject = json.loads(resp.text)
             if 'code' in responseObject and responseObject['code'] == 'unauthorized':
@@ -241,25 +242,14 @@ class SkzkMsgApi(object):
 
 
             payload = {"refresh_token": refresh_token}
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.s46.glastonr.net',
-                'Authorization': 'Bearer ' + self.token[refresh_token],
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
-            resp = requests.request('GET', "https://api.s46.glastonr.net/v2/groups", data=json.dumps(payload),
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_skzk_headers
+            resp = requests.request('GET', "https://api.s46.glastonr.net/v2/groups?organization_id=1", data=json.dumps(payload),
                                     headers=headers,
                                     timeout=self.qry_timeout)
 
             responseObject = json.loads(resp.text)
-            # print(responseObject)
-            # print(f'req groups: {responseObject}')
+            # print(f'skzk req groups: {responseObject}')
             for item in responseObject:
                 if 'subscription' in item:
                     if 'state' in item['subscription'] and (
@@ -307,18 +297,8 @@ class SkzkMsgApi(object):
         res = []
         payload = {"refresh_token": refresh_token}
         if member in self.g_sublist:
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.s46.glastonr.net',
-                'Authorization': 'Bearer ' + token,
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_skzk_headers
 
             params = {
 
@@ -386,7 +366,7 @@ class HntzkMsgApi(object):
             }
 
             resp = requests.request('POST', "https://api.kh.glastonr.net/v2/update_token", data=json.dumps(payload),
-                                    headers=headers, timeout=self.qry_timeout)
+                                    headers=g_htzk_headers, timeout=self.qry_timeout)
 
             responseObject = json.loads(resp.text)
             if 'code' in responseObject and responseObject['code'] == 'unauthorized':
@@ -401,19 +381,9 @@ class HntzkMsgApi(object):
 
 
             payload = {"refresh_token": refresh_token}
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.kh.glastonr.net',
-                'Authorization': 'Bearer ' + self.token[refresh_token],
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
-            resp = requests.request('GET', "https://api.kh.glastonr.net/v2/groups", data=json.dumps(payload),
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_htzk_headers
+            resp = requests.request('GET', "https://api.kh.glastonr.net/v2/groups?organization_id=1", data=json.dumps(payload),
                                     headers=headers,
                                     timeout=self.qry_timeout)
 
@@ -467,18 +437,8 @@ class HntzkMsgApi(object):
         res = []
         payload = {"refresh_token": refresh_token}
         if member in self.g_sublist:
-            headers = {
-                'Accept': '*/*',
-                'Accept-Encoding': 'br;q=1.0, gzip;q=0.9, deflate;q=0.8',
-                'Accept-Language': 'zh-Hans-CN;q=1.0, en-CN;q=0.9, ja-CN;q=0.8',
-                'Connection': 'keep-alive',
-                'Content-Length': '56',
-                'Host': 'api.kh.glastonr.net',
-                'Authorization': 'Bearer ' + token,
-                'User-Agent': 'Hot/1.0.03 (jp.co.sonymusic.communication.nogizaka; build:117; iOS 15.3.1) Alamofire/5.5.0',
-                'X-Talk-App-ID': 'jp.co.sonymusic.communication.nogizaka 2.4',
-                'Content-Type': 'application/json'
-            }
+            auth_header = {'Authorization': 'Bearer ' + self.token[refresh_token]}
+            headers = auth_header | g_htzk_headers
 
             params = {
 
