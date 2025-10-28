@@ -109,12 +109,10 @@ class NgzkMsgApi(object):
                                     timeout=self.qry_timeout)
 
             responseObject = json.loads(resp.text)
-            # print(responseObject)
             # print(f'req groups: {responseObject}')
             for item in responseObject:
                 if 'subscription' in item:
-                    if 'state' in item['subscription'] and (
-                            item['subscription']['state'] == 'active'):
+                    if 'state' in item['subscription']:
                         if item['name'] not in res:
                             res[item['name']] = NgzkMsgGroup(name=item['name'], id=item['id'], avatar=item['thumbnail'])
                         if self.token[refresh_token] not in res[item['name']].AvailableTokenDict:
@@ -163,9 +161,9 @@ class NgzkMsgApi(object):
             params = {
 
                 "count": str(self.qry_history_cnt),  # 获取msg的数量
-                "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
+                # "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
                 "order": self.qry_order,  # asc正序；desc逆序；
-                "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
+                # "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
             }
 
             resp = requests.request('GET',
@@ -175,7 +173,7 @@ class NgzkMsgApi(object):
 
             responseObject = json.loads(resp.text)
 
-            # print(f"resp of get msg is {responseObject}")
+            print(f"resp of get msg is {responseObject}")
 
             if 'code' in responseObject and responseObject['code'] == 'unauthorized':
                 self.token = self.get_access_token()
@@ -303,9 +301,9 @@ class SkzkMsgApi(object):
             params = {
 
                 "count": str(self.qry_history_cnt),  # 获取msg的数量
-                "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
+                # "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
                 "order": self.qry_order,  # asc正序；desc逆序；
-                "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
+                # "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
             }
 
             resp = requests.request('GET',
@@ -443,9 +441,9 @@ class HntzkMsgApi(object):
             params = {
 
                 "count": str(self.qry_history_cnt),  # 获取msg的数量
-                "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
+                # "created_from": updated_from,  # msg 最开始的时间. 2022-02-21T16:24:39Z
                 "order": self.qry_order,  # asc正序；desc逆序；
-                "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
+                # "updated_from": updated_from  # msg的时间点，采用的是格林尼治时间，与显示时间相差（-8）小时。2022-02-21T16:00:00Z
             }
 
             resp = requests.request('GET',
