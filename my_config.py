@@ -15,35 +15,23 @@ class ConfigManager(object):
 	def __init__(self):
 		###  这里使用 streamlit 网站部署时可以用提供的 secrets来方便的修改， 优选于配置文件的方式
 
-		if 'config_flie' in st.secrets and st.secrets["config_file"] is not None:
-			config_file_path = st.secrets["config_flie"]
+		if 'config_file' in st.secrets and st.secrets["config_file"] is not None:
+			config_file_path = st.secrets["config_file"]
 		else:
 			config_file_path = './config.yaml'
 
-		if 'refresh_token' in st.secrets and st.secrets["refresh_token"] is not None:
-			refresh_token = st.secrets["refresh_token"]
-		if 'refresh_token_s46' in st.secrets and st.secrets["refresh_token_s46"] is not None:
-			refresh_token_s46 = st.secrets["refresh_token_s46"]
-		if 'refresh_token_h46' in st.secrets and st.secrets["refresh_token_h46"] is not None:
-			refresh_token_h46 = st.secrets["refresh_token_h46"]
-		else:
-			## 如果不采用 streamlit方式的话，  这里应采用配置文件中的
-			exit(-10)
-
-		self.config_dict = load_yaml(config_file_path)
-
-		if 'qry_history_spread' in st.secrets and st.secrets["qry_history_spread"] is not None:
-			self.config_dict['qry_history_spread'] = int(st.secrets["qry_history_spread"])
+		secrets_dict = dict(st.secrets)
 
 
-		if refresh_token is not None:
-			self.config_dict['refresh_token'] = refresh_token
+		self.config_dict = load_yaml(config_file_path) | secrets_dict
 
-		if refresh_token_s46 is not None:
-			self.config_dict['refresh_token_s46'] = refresh_token_s46
-		
-		if refresh_token_h46 is not None:
-			self.config_dict['refresh_token_h46'] = refresh_token_h46
+		print(f"config_dict is {self.config_dict}")
+		print(f'type of  st.secrets is {type( st.secrets)}')
+		print(f'type of  self.config_dict is {type( self.config_dict)}')
+
+
+
+
 
 	def get_config(self, key: str, defaultVal):
 		if key in self.config_dict and self.config_dict[key] is not None:

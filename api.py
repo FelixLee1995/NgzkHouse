@@ -68,6 +68,7 @@ class NgzkMsgApi(object):
 
     def __init__(self):
         self.refresh_token = g_config.get_config("refresh_token", [])
+        self.refresh_token_mapping = g_config.get_config("refresh_tokens", [])
         self.qry_timeout = g_config.get_config("qry_timeout", 3)
         self.qry_history_spread = g_config.get_config("qry_history_spread", 24)
         self.qry_history_cnt = g_config.get_config("qry_history_cnt", 200)
@@ -119,6 +120,13 @@ class NgzkMsgApi(object):
                             res[item['name']].AvailableTokenDict[refresh_token] = self.token[refresh_token]
             # if item['name'] not in g_msg_signature:
             #     g_msg_signature[item['name']] = []
+
+
+            for member_name in res:
+                for refresh_token in self.refresh_token_mapping:
+                    if member_name in refresh_token['member']:
+                        res[member_name].AvailableTokenDict = {refresh_token['token']: self.token[refresh_token['token']]}
+
             self.g_sublist = res
         return res
 
@@ -195,6 +203,7 @@ class SkzkMsgApi(object):
 
     def __init__(self):
         self.refresh_token = g_config.get_config("refresh_token_s46", [])
+        self.refresh_token_mapping = g_config.get_config("refresh_tokens_s46", [])
         self.qry_timeout = g_config.get_config("qry_timeout", 3)
         self.qry_history_spread = g_config.get_config("qry_history_spread", 24)
         self.qry_history_cnt = g_config.get_config("qry_history_cnt", 200)
@@ -258,6 +267,10 @@ class SkzkMsgApi(object):
                             res[item['name']].AvailableTokenDict[refresh_token] = self.token[refresh_token]
             # if item['name'] not in g_msg_signature:
             #     g_msg_signature[item['name']] = []
+            for member_name in res:
+                for refresh_token in self.refresh_token_mapping:
+                    if member_name in refresh_token['member']:
+                        res[member_name].AvailableTokenDict = {refresh_token['token']: self.token[refresh_token['token']]}
             self.g_sublist = res
         return res
 
@@ -334,6 +347,7 @@ class HntzkMsgApi(object):
 
     def __init__(self):
         self.refresh_token = g_config.get_config("refresh_token_h46", [])
+        self.refresh_token_mapping = g_config.get_config("refresh_tokens_h46", [])
         self.qry_timeout = g_config.get_config("qry_timeout", 3)
         self.qry_history_spread = g_config.get_config("qry_history_spread", 24)
         self.qry_history_cnt = g_config.get_config("qry_history_cnt", 200)
@@ -398,6 +412,12 @@ class HntzkMsgApi(object):
                             res[item['name']].AvailableTokenDict[refresh_token] = self.token[refresh_token]
             # if item['name'] not in g_msg_signature:
             #     g_msg_signature[item['name']] = []
+
+            for member_name in res:
+                for refresh_token in self.refresh_token_mapping:
+                    if member_name in refresh_token['member']:
+                        res[member_name].AvailableTokenDict = {refresh_token['token']: self.token[refresh_token['token']]}
+
             self.g_sublist = res
         return res
 
