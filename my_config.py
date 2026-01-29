@@ -1,4 +1,4 @@
-import yaml
+from ruamel.yaml import YAML
 import sys
 import os
 import streamlit as st
@@ -6,7 +6,8 @@ import streamlit as st
 def load_yaml(filename):
 	if os.path.exists(filename):
 		with open(filename, mode="r", encoding="UTF-8") as f:
-			data = yaml.load(f, Loader=yaml.FullLoader)
+			yaml = YAML(typ='safe')
+			data = yaml.load(f)
 			return data
 	return None
 

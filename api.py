@@ -404,12 +404,10 @@ class HntzkMsgApi(object):
             # print(f'req groups: {responseObject}')
             for item in responseObject:
                 if 'subscription' in item:
-                    if 'state' in item['subscription'] and (
-                            item['subscription']['state'] == 'active'):
-                        if item['name'] not in res:
-                            res[item['name']] = NgzkMsgGroup(name=item['name'], id=item['id'], avatar=item['thumbnail'])
-                        if self.token[refresh_token] not in res[item['name']].AvailableTokenDict:
-                            res[item['name']].AvailableTokenDict[refresh_token] = self.token[refresh_token]
+                    if item['name'] not in res:
+                        res[item['name']] = NgzkMsgGroup(name=item['name'], id=item['id'], avatar=item['thumbnail'])
+                    if self.token[refresh_token] not in res[item['name']].AvailableTokenDict:
+                        res[item['name']].AvailableTokenDict[refresh_token] = self.token[refresh_token]
             # if item['name'] not in g_msg_signature:
             #     g_msg_signature[item['name']] = []
 
